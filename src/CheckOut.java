@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //Import of Scanner Utility
 public class CheckOut
 {
     public static void main(String[] args)
@@ -16,5 +16,4 @@ public class CheckOut
         } while (!done); //Decision to continue loop for customer items based on user response
         System.out.printf("Your total cost of all items is " + "%5.2f", totalCost); //Output total cost of all items formatted to 2 decimals
     }
-
 }
