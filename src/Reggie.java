@@ -1,6 +1,6 @@
 
 import java.util.Locale; //Had to import this for the upper case function
-import java.util.Scanner;
+import java.util.Scanner; //Import of Scanner Utility
 public class Reggie
 {
     public static void main(String[] args)
@@ -19,20 +19,20 @@ public class Reggie
         menuChoice = SafeInput.getRegExString(in, "Please make a choice " + menuChoice, "[OoSsVvQq]"); //Prompt user for menu choice
         menuChoice = menuChoice.toUpperCase(Locale.ROOT); //Convert user's choice to upper case if they enter lower case value
 
-        switch(menuChoice)
+       switch(menuChoice) //Values for Case statements
             {
-                case "O":
-                System.out.println("You chose Open ");
-                break;
-                case "S":
-                System.out.println("You chose Save ");
-                break;
-                case "V":
-                System.out.println("You chose View ");
-                break;
-                case "Q":
-                System.out.println("You chose quit ");
-                break;
+                case "O": //Open
+                System.out.println("You chose Open "); //Output statement
+                break; //Jump out of switch to main program
+                case "S": //Save
+                System.out.println("You chose Save "); //Output statement
+                break; //Jump out of switch to main program
+                case "V": //View
+                System.out.println("You chose View "); //Output statement
+                break; //Jump out of switch to main program
+                case "Q": //Quit
+                System.out.println("You chose quit "); //Output statement
+                break; //Jump out of switch to main program
             }
     }
 }
